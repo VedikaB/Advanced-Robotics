@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="ar_week5_test" name="generator" type="points_generator.py" output="screen" />
+    <node pkg="ar_week5_test" name="planner" type="cubic_traj_planner.py" output="screen"/>
+    <node pkg="ar_week5_test" name="compute" type="compute_cubic_coeffs.py" output="screen" />
+    <node pkg="ar_week5_test" name="plotter" type="plot_cubic_traj.py" output="screen" />
+</launch>
